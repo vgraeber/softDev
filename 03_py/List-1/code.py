@@ -25,7 +25,7 @@ def sum3(nums):
   return sum(nums)
 
 def rotate_left3(nums):
-  newArray = nums[1:len(nums)]
+  newArray = nums[1:]
   newArray.append(nums[0])
   return newArray
 
