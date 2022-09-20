@@ -14,7 +14,7 @@ def sum_double(a, b):
   if (a != b):
     return (a + b)
   else:
-    return (2*(a + b))
+    return ((a + b) * 2)
 
 def diff21(n):
   if (n > 21):
@@ -62,7 +62,7 @@ def front_back(str):
   if (len(str) <= 1):
     return str
   else:
-    str2 = str[(len(str)-1)] + str[1:(len(str)-1)] + str[0]
+    str2 = str[-1] + str[1:-1] + str[0]
     return str2
 
 def front3(str):
