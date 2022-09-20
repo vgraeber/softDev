@@ -20,7 +20,7 @@ def string_splosion(str):
   return output
 
 def last2(str):
-  endpart = str[(len(str) - 2):]
+  endpart = str[-2:]
   times = 0
   for i in range(len(str) - 2):
     if (str[i:(i + 2)] == endpart):
@@ -36,19 +36,18 @@ def array_count9(nums):
 
 def array_front9(nums):
   first = nums[0:4]
-  ninesPresent = False
   for i in first:
     if (i == 9):
-      ninesPresent = True
-  return ninesPresent
+      return True
+  return False
 
 def array123(nums):
   target = [1, 2, 3]
   present = False
   for i in range(len(nums) - 2):
     if (nums[i:(i + 3)] == target):
-      present = True
-  return (present)
+      return True
+  return False
 
 def string_match(a, b):
   if (len(a) < len(b)):
