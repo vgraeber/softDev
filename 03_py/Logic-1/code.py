@@ -66,6 +66,6 @@ def in1to10(n, outside_mode):
   return False
 
 def near_ten(num):
-  if ((abs(num % 10) <= 2) or (abs(num % 10) >= 8)):
+  if (((num % 10) <= 2) or ((num % 10) >= 8)):
     return True
   return False
