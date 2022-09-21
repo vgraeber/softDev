@@ -1,10 +1,8 @@
 def string_times(str, n):
-  output = (str * n)
-  return output
+  return (str * n)
 
 def front_times(str, n):
-  output = (str[0:3] * n)
-  return output
+  return (str[0:3] * n)
 
 def string_bits(str):
   return str[::2]
