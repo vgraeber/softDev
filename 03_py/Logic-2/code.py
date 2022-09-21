@@ -41,8 +41,7 @@ def lucky_sum(a, b, c)
     return a
   elif (c == 13):
     return (a + b)
-  else:
-    return (a + b + c)
+  return (a + b + c)
 
 def fix_teen(n):
   if ((n == 15) or (n ==16)):
