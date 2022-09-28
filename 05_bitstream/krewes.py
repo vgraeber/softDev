@@ -3,7 +3,7 @@ Ziying Jian, Vivian Graeber
 SoftDev
 K05 -- bitstream
 2022-09-28
-time spent: <elapsed time in hours, rounded to nearest tenth>
+time spent: 1
 """
 """
 DISCO:
