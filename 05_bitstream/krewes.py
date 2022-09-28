@@ -14,5 +14,12 @@ OPS:
 """
 
 info = open("krewes.txt", "r")
-info.read()
-print(info.read())
+fullText = info.read()
+fullText = fullText[:-1]
+infoChunks = fullText.split("@@@")
+infoStrings = []
+for i in infoChunks:
+    infoStrings.append(i.split("$$$"))
+infoStrings.sort()
+print(infoStrings)
+info.close()
