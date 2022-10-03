@@ -1,4 +1,10 @@
-# your heading here
+'''
+VAT: Vivian Graeber, Ayman Habib, Talia Hsia
+SoftDev
+K07 -- Learning Flask
+2022-10-03
+time spent: 15 min
+'''
 
 from flask import Flask
 
@@ -10,7 +16,6 @@ def hello_world():
     return "No hablo queso!"  # Q4: Will this appear anywhere? How u know?
 
 app.run()  # Q5: Where have you seen similar constructs in other languages?
-
 
 '''
 DISCO:
