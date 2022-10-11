@@ -21,12 +21,12 @@ app.run()  # Q5: Where have you seen similar constructs in other languages?
 DISCO:
 
 QCC:
-0. 
-1. 
-2. 
-3. 
-4. 
-5. 
+0. java
+1. location indicators
+2. the terminal
+3. it'll print __main__
+4. the website; i saw it
+5. java
 ...
 
 INVESTIGATIVE APPROACH:
