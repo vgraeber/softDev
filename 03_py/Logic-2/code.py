@@ -21,7 +21,7 @@ def lone_sum(a, b, c):
     c = 0
   return (a + b + c)
 
-def lucky_sum(a, b, c) 
+def lucky_sum(a, b, c): 
   if (a == 13):
     return 0
   elif (b == 13):
