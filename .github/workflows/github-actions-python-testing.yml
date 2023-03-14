@@ -1,9 +1,9 @@
 name: GitHub Actions Python Testing
 run-name: Python Testing
-on: [push]
+on: [github.event.label]
 
 jobs:
-  Test-Python:
+  Test Python:
     runs-on: ubuntu-latest
     strategy:
       matrix:
