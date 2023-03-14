@@ -3,7 +3,7 @@ run-name: Python Testing
 on: [push]
 
 jobs:
-  Test Python:
+  Test-Python:
     runs-on: ubuntu-latest
     strategy:
       matrix:
