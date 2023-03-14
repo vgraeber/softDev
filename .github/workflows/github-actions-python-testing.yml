@@ -1,6 +1,6 @@
 name: GitHub Actions Python Testing
 run-name: Python Testing
-on: [github.event.label]
+on: [label]
 
 jobs:
   Test Python:
