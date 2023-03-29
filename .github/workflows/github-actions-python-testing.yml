@@ -3,7 +3,7 @@ run-name: Python Testing
 on: [push, workflow_dispatch]
 
 jobs:
-  Check-Python-Suntax:
+  Check-Python-Syntax:
     runs-on: ubuntu-latest
     strategy:
       matrix:
