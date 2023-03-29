@@ -1,4 +1,4 @@
-from softDev.03_py import warmup_1.py
+from 03_py import warmup_1
 
 def test_sleep_in(weekday, vacation):
   assert sleep_in(False, False) == True
