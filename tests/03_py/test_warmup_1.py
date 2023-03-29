@@ -1,5 +1,4 @@
-import warmup_1.py
-from warmup_1.py import sleep_in
+import * from warmup_1.py
 
 def test_sleep_in(weekday, vacation):
   assert sleep_in(False, False) == True
