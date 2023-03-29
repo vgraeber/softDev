@@ -4,6 +4,12 @@ def sleep_in(weekday, vacation):
   else:
     return False
 
+def test_sleep_in(weekday, vacation):
+  assert sleep_in(False, False) == True
+  assert sleep_in(True, False) == False
+  assert sleep_in(False, True) == True
+  assert sleep_in(True, True) == True
+
 def monkey_trouble(a_smile, b_smile):
   if (a_smile == b_smile):
     return True
