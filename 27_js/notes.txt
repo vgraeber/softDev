@@ -1,0 +1,16 @@
+Team Frog Riders :: Matthew Yee, Vivian Graeber
+SoftDev pd7
+K27 -- Basic functions in JavaScript
+2023-04-04
+
+DISCO
+-----------------------------------------------------------------
+* Do not like having to make a header in Scheme
+* Scheme: the land of indentation
+* <3 Multi-line editing in dev console
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Why Scheme?
+=================================================================
