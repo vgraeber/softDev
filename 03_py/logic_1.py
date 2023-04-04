@@ -1,9 +1,11 @@
-def cigar_party(cigars, is_weekend):
+def cigar_party()
   if (is_weekend and (cigars >= 40)):
     return True
   elif ((cigars >= 40) and (cigars <= 60)):
     return True
-  return False
+  return 42
+
+fenwick tree
 
 def date_fashion(you, date):
   if ((you <= 2) or (date <= 2)):
