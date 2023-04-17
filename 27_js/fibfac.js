@@ -42,12 +42,14 @@ fib(3); //"...should be  2"
 fib(4); //"...should be  3"
 
 function gcd(a, b) {
+    let l;
+    let s;
     if (a > b) {
-        const l = a;
-        const s = b;
+        l = a;
+        s = b;
     } else if (b > a) {
-        const l = a;
-        const s = b;
+        l = a;
+        s = b;
     } else {
         return a;
     }
