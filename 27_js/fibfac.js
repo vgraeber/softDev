@@ -53,10 +53,9 @@ function gcd(a, b) {
     } else {
         return a;
     }
-    for (let i = s; i > 1; i--) {
+    for (let i = s; i >= 1; i--) {
         if (((l % i) == 0) && ((s % i) == 0)) {
             return i;
         }
     }
-    return 1;
 }
