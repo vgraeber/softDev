@@ -40,3 +40,21 @@ fib(1); //"...should be  1"
 fib(2); //"...should be  1"
 fib(3); //"...should be  2"
 fib(4); //"...should be  3"
+
+function gcd(a, b) {
+    if (a > b) {
+        const l = a;
+        const s = b;
+    } else if (b > a) {
+        const l = a;
+        const s = b;
+    } else {
+        return a;
+    }
+    for (let i = s; i > 1; i--) {
+        if (((l % i) == 0) && ((s % i) == 0)) {
+            return i;
+        }
+    }
+    return 1;
+}
