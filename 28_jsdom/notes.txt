@@ -1,0 +1,14 @@
+Team Frog Riders :: Matthew Yee, Vivian Graeber
+SoftDev pd7
+K27 -- Basic functions in JavaScript
+2023-04-04
+
+DISCO
+-----------------------------------------------------------------
+* The latest class applied seems to be the one that is displayed when the html is rendered.
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Why have so many ways of declaring a function in JS?
+=================================================================
