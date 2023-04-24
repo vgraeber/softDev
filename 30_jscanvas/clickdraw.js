@@ -42,5 +42,5 @@ var wipeCanvas = () => {
 c.addEventListener("click", draw);
 var bToggler = document.getElementById("buttonToggle");
 bToggler.addEventListener("click", toggleMode);
-var clearB = docuemnt.getElementById("buttonClear");
+var clearB = document.getElementById("buttonClear");
 clearB.addEventListener("click", wipeCanvas);
