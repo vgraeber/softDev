@@ -4,39 +4,49 @@ var mode = "rect";
 
 var toggleMode = (e) => {
     console.log("toggling...");
-    if(mode = "rect"){
+    if (mode == "rect"){
         mode = "circ";
-    }
-    else{
+    } else {
         mode = "rect";
     }
 }
 
 var drawRect = function(e){
-    var mouseX = e.clientX;
-    var mouseY = e.clientY;
+    var mouseX = e.offsetX;
+    var mouseY = e.offsetY;
     console.log("mouseclick registered at ", mouseX, mouseY);
-    ctx.fillrect(mouseX, mouseY, 25, 100);
+    ctx.fillStyle = "rgb(255, 0, 0)";
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "black";
+    ctx.beginPath();
+    ctx.rect(mouseX, mouseY, 25, 100);
+    ctx.fill();
+    ctx.stroke();
 }
 
 var drawCircle = (e) => {
-    var mouseX = e.clientX;
-    var mouseY = e.clientY;
+    var mouseX = e.offsetX;
+    var mouseY = e.offsetY;
     console.log("mouseclick registered at ", mouseX, mouseY);
-
+    ctx.fillStyle = "rgb(255, 0, 0)";
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "black";
+    ctx.beginPath();
+    ctx.ellipse(mouseX, mouseY, 25, 25, 0, 0, (2 * Math.PI));
+    ctx.fill();
+    ctx.stroke();
 }
 
 var draw = (e) => {
-    if(mode = "rect"){
-        drawRect;
-    }
-    else{
+    if (mode == "rect") {
+        drawRect(e);
+    } else {
         drawCircle(e);
     }
 }
 
 var wipeCanvas = () => {
-
+    ctx.reset();
 }
 
 c.addEventListener("click", draw);
