@@ -38,9 +38,7 @@ var drawDot = () => {
 var stopIt = () => {
     console.log("stopIt invoked...");
     console.log(requestID);
-    if (requestID != null) {
-        window.cancelAnimationFrame(requestID);
-    }
+    window.cancelAnimationFrame(requestID);
 };
 
 dotButton.addEventListener("click", drawDot);
