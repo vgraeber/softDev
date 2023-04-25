@@ -20,9 +20,8 @@ var drawDot = () => {
     ctx.arc((c.width / 2), (c.height / 2), radius, 0, (2 * Math.PI));
     ctx.fill();
     ctx.stroke();
-    returnID = window.requestAnimationFrame(drawDot);
-    console.log("returnID: ", returnID);
-    window.cancelAnimationFrame(requestID);
+    requestID = window.requestAnimationFrame(drawDot);
+    window.cancelAnimationFrame(requestID - 1);
     if (radius == (c.width / 2)) {
         growing = false;
     }
@@ -40,7 +39,6 @@ var stopIt = () => {
     console.log("stopIt invoked...");
     console.log(requestID);
     if (requestID != null) {
-        console.log("trying to stop");
         window.cancelAnimationFrame(requestID);
     }
 };
