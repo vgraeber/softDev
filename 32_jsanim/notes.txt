@@ -1,0 +1,14 @@
+Team Frog Riders :: Matthew Yee, Vivian Graeber
+SoftDev pd7
+K32 -- canvas based JS animation
+2023-04-27
+
+DISCO
+-----------------------------------------------------------------
+* e.preventDefault breaks the code
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Why have it in there in the first place?
+=================================================================
