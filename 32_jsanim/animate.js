@@ -7,16 +7,16 @@ ctx.fillStyle = "rgb(0, 255, 255)";
 var requestID;
 
 var clear = function(e) {
-    e.preventDefault();
+    console.log(e);
+    //e.preventDefault();
     ctx.clearRect(0, 0, c.width, c.height);
 };
 
 var radius = 0;
 var growing = true;
 
-var drawDot = () => {
+var drawDot = (e) => {
     clear(e);
-    console.log("dotting");
     window.cancelAnimationFrame(requestID);
     ctx.lineWidth = 1;
     ctx.strokeStyle = "black";
@@ -24,7 +24,6 @@ var drawDot = () => {
     ctx.arc((c.width / 2), (c.height / 2), radius, 0, (2 * Math.PI));
     ctx.fill();
     ctx.stroke();
-    requestID = window.requestAnimationFrame(drawDot);
     if (radius == (c.width / 2)) {
         growing = false;
     }
@@ -36,6 +35,7 @@ var drawDot = () => {
     } else {
         radius -= 1;
     }
+    requestID = window.requestAnimationFrame(drawDot);
 };
 
 var dvdLogoSetup = function() {
@@ -48,7 +48,6 @@ var dvdLogoSetup = function() {
     var yVel = 1;
     var logo = new Image();
     logo.src = "logo_dvd.jpg";
-
     var dvdLogo = function() {
         ctx.clearRect(0, 0, c.width, c.height);
         ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight);
