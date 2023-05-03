@@ -7,7 +7,10 @@ ctx.fillStyle = "rgb(0, 255, 255)";
 var requestID;
 
 var clear = function(e) {
+<<<<<<< HEAD
     console.log(e);
+=======
+>>>>>>> a517e1c640e02bd6cbf326bc835025184f0b073d
     //e.preventDefault();
     ctx.clearRect(0, 0, c.width, c.height);
 };
